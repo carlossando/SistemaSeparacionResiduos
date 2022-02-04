@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Victor Murcio"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-02-02 12:53:59 p. m."/>
+        <attribute name="created" value="VmljdG9yIE11cmNpbztMQVBUT1AtQVBKVk9PQkY7MjAyMi0wMS0yODswOTo1OToyNSBhLiBtLjszODU4"/>
+        <attribute name="edited" value="VmljdG9yIE11cmNpbztMQVBUT1AtQVBKVk9PQkY7MjAyMi0wMi0wMjsxMjo1Mzo1OSBwLiBtLjs1OzM5NzM="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n" type="Integer" array="False" size=""/>
+            <for variable="n" start="0" end="30" direction="inc" step="1">
+                <declare name="TipodeBasura" type="Integer" array="False" size=""/>
+                <input variable="TipodeBasura"/>
+                <if expression="TipodeBasura ==1">
+                    <then>
+                        <output expression="&quot;Bote verde&quot;" newline="True"/>
+                    </then>
+                    <else>
+                        <if expression="TipodeBasura == 2">
+                            <then>
+                                <output expression="&quot;Bote Rojo&quot;" newline="True"/>
+                            </then>
+                            <else>
+                                <if expression="TipodeBasura == 3">
+                                    <then>
+                                        <output expression="&quot;Bote Amarillo&quot;" newline="True"/>
+                                    </then>
+                                    <else>
+                                        <if expression="TipodeBasura ==4">
+                                            <then>
+                                                <output expression="&quot;Bote Azul&quot;" newline="True"/>
+                                            </then>
+                                            <else/>
+                                        </if>
+                                    </else>
+                                </if>
+                            </else>
+                        </if>
+                    </else>
+                </if>
+            </for>
+        </body>
+    </function>
+</flowgorithm>
